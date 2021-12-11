@@ -1,8 +1,4 @@
 package com.example;
-
-
-    
-
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -10,16 +6,15 @@ import java.io.InputStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import com.example.DirCon;
 public class CookieServer {
-
-
     public static void main(String[] args) throws IOException {
+        //DirCon wc1 = new DirCon();
         Cookie cookie = new Cookie();
         DirCon wc = new DirCon();
-        String cookieTxtLoc = args[args.length-1];
-        String serverPortNum = args[args.length-2];
-        
+        //String cookieTxtLoc = args[args.length-1];
+        //String serverPortNum = args[args.length-2];
+        String cookieTxtLoc = "cookie_file.txt";
+        String serverPortNum = "12345";
         
         //load cookie here
         System.out.println(wc.GetWorkingDirStrForNonJavaFile() + cookieTxtLoc);
@@ -49,8 +44,7 @@ public class CookieServer {
 
         //socket.close();
 
+
     }
     }
 }
-
-
